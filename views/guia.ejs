@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="public/stylesheets/style.css">
+  <link rel="icon" href="public/imagens/folha.png">
+  <style>
+
+  </style>
+  <title>Guia de Identificação</title>
+</head>
+
+<body>
+  <!-- Cabecalho -->
+  <div class="body">
+    <header>
+      <nav>
+        <div class="header">
+          <div class="logo">
+            <h2>Guia de Identificação das Espécies Arbóreas do Câmpus da UTFPR, Dois Vizinhos</h2>
+          </div>
+          <div class="grid-header">
+            <div class="btn-header">
+              <form action="/" method="get">
+                <button class="btnHeaderRelative">Projeto</button>
+              </form>
+            </div>
+            <div class="btn-header">
+              <form action="/terminologiaDendrologica" method="get">
+                <button class="btnHeaderRelative">Terminologia Dendrológica</button>
+              </form>
+            </div>
+            <div class="btn-header">
+              <form action="/Equipe" method="get">
+                <button class="btnHeaderRelative">Equipe</button>
+              </form>
+            </div>
+            <div class="btn-header">
+              <form action="/listaEspecies" method="get">
+                <button class="btnHeaderRelative">Lista de Espécies</button>
+              </form>
+            </div>
+            <div class="btn-header">
+              <form action="/contatos" method="get">
+                <button class="btnHeaderRelative">Contatos</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- corpo -->
+    <div class="div-body">
+      <h2 style="text-align: center;">Guia de Indentificação</h2>
+        <form action="/pesquisar" method="post">
+        <div class="classOpcoes">
+        <div style="margin: 0 auto;max-width: 300px;">
+          <div class="opcoesLabel">
+          <label>Tipo de folha:</label>
+          <select name="tipoFolha">
+            <option>Selecione a opção</option>
+            <option value="Simples">Simples</option>
+            <option value="Composta pinada">Composta pinada</option>
+            <option value="Composta pinada paripinada">Composta pinada paripinada</option>
+            <option value="Composta pinada imparipinada">Composta pinada imparipinada</option>
+            <option value="Composta bipinada">Composta bipinada</option>
+            <option value="Composta triplinada">Composta triplinada</option>
+            <option value="Composta digitada">Composta digitada</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+          <label>Filotaxia da folha:</label>
+          <select name="filotaxiaFolha">
+            <option>Selecione a opção</option>
+            <option value="Alterna">Alterna</option>
+            <option value="Alterna dística">Alterna dística</option>
+            <option value="Composta digitada, Simples">Composta digitada, Simples</option>
+            <option value="Oposta">Oposta</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+          <label>Forma da folha:</label>
+          <select name="formaFolha">
+            <option>Selecione a opção</option>
+            <option value="Cordada">Cordada</option>
+            <option value="Elíptica">Elíptica</option>
+            <option value="Elíptica, Lanceolada">Elíptica, Lanceolada</option>
+            <option value="Elíptica, Oboval">Elíptica, Oboval</option>
+            <option value="Elíptica, Oval">Elíptica, Oval</option>
+            <option value="Elíptica, Oval, Lanceolada">Elíptica, Oval, Lanceolada</option>
+            <option value="Espatulada, Oboval">Espatulada, Oboval</option>
+            <option value="Lanceolada"> Lanceolada</option>
+            <option value="Lanceolada, Elíptica">Lanceolada, Elíptica</option>
+            <option value="Lanceolada, Elíptica, Oval">Lanceolada, Elíptica, Oval</option>
+            <option value="Lanceolada, Oval">Lanceolada, Oval</option>
+            <option value="Linear, Acicular">Linear, Acicular</option>
+            <option value="Linear, Lanceolada">Linear, Lanceolada</option>
+            <option value="Lobada">Lobada</option>
+            <option value="Oboval, Elíptica">Oboval, Elíptica</option>
+            <option value="Orbicular, Oval">Orbicular, Oval</option>
+            <option value="Oval">Oval</option>
+            <option value="Oval, Elíptica">Oval, Elíptica</option>
+            <option value="Oval, Lanceolada, Elíptica">Oval, Lanceolada, Elíptica</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+          <label>Margem da folha:</label>
+          <select name="margemFolha">
+            <option>Selecione a opção</option>
+            <option value="Fendida">Fendida</option>
+            <option value="Fendida, Interna">Fendida, Interna</option>
+            <option value="Interna">Interna</option>
+            <option value="Interna, Ondulada">Interna, Ondulada</option>
+            <option value="Serreada">Serreada</option>
+            <option value="Serreada, Fendida">Serreada, Fendida</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+          <label>Apice da folha:</label>
+          <select name="apiceFolha">
+            <option>Selecione a opção</option>
+            <option value="Acuminado">Acuminado</option>
+            <option value="Acuminado, Agudo">Acuminado, Agudo</option>
+            <option value="Acuminado, Emarginado">Acuminado, Emarginado</option>
+            <option value="Acuminado, Pungente">Acuminado, Pungente</option>
+            <option value="Agudo">Agudo</option>
+            <option value="Agudo, Acuminado">Agudo, Acuminado</option>
+            <option value="Agudo, Emarginado">Agudo, Emarginado</option>
+            <option value="Emarginado, Agudo">Emarginado, Agudo</option>
+            <option value="Pungente, Acuminado">Pungente, Acuminado</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+          <label>Base da folha:</label>
+          <select name="baseFolha">
+            <option>Selecione a opção</option>
+            <option value="Aguda">Aguda</option>
+            <option value="Aguda, Arredondada">Aguda, Arredondada</option>
+            <option value="Aguda, Arredondada, Cordada">Aguda, Arredondada, Cordada</option>
+            <option value="Aguda, Arredondada, Truncada">Aguda, Arredondada, Truncada</option>
+            <option value="Aguda, Assimétrica">Aguda, Assimétrica</option>
+            <option value="Aguda, Cuneada">Aguda, Cuneada</option>
+            <option value="Arredondada, Aguda">Arredondada, Aguda</option>
+            <option value="Assimétrica, Aguda">Assimétrica, Aguda</option>
+            <option value="Assimétrica, Arredondada">Assimétrica, Arredondada</option>
+            <option value="Assimétrica, Cordada">Assimétrica, Cordada</option>
+            <option value="Bainha">Bainha</option>
+            <option value="Cordada">Cordada</option>
+            <option value="Cordada, Aguda, Truncada">Cordada, Aguda, Truncada</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+          <label> Nervação:</label>
+          <select name="nervacao">
+            <option>Selecione a opção</option>
+            <option value="Paralelinérvea">Paralelinérvea</option>
+            <option value="Peninérvea">Peninérvea</option>
+            <option value="Peninérvea, Triplinérvea">Peninérvea, Triplinérvea</option>
+            <option value="Peninérvea, Uninérvea">Peninérvea Uninérvea</option>
+            <option value="Triplinérvea">Triplinérvea</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+            <label> Consistência:</label>
+            <select name="consistencia">
+              <option>Selecione a opção</option>
+              <option value="Coriácea">Coriácea</option>
+              <option value="Coriácea, Membranosa">Coriácea, Membranosa</option>
+              <option value="Coriácea, Subcoriácea">Coriácea, Subcoriácea</option>
+              <option value="Membranosa">Membranosa</option>
+              <option value="Membranosa, Subcoriácea">Membranosa, Subcoriácea</option>
+              <option value="Membranácea, Subcoriácea">Membranácea, Subcoriácea</option>
+              <option value="Subcoriácea">Subcoriácea</option>
+              <option value="Subcoriácea, Coriácea">Subcoriácea, Coriácea</option>
+              <option value="Subcoriácea, Membranosa">Subcoriácea, Membranosa</option>
+              <option value="Sucoriácea, Membranosa">Sucoriácea, Membranosa</option>
+            </select>
+            </div>
+            <div class="opcoesLabel">
+            <label> Pilosidade:</label>
+            <select name="pilosidade">
+              <option>Selecione a opção</option>
+              <option value="Glabra">Glabra</option>
+              <option value="Glabra, Pilosa">Glabra, Pilosa</option>
+              <option value="Pilosa">Pilosa</option>
+            </select>
+            </div>
+            <div class="opcoesLabel">
+            <label> Caracteres Especias da Folha:</label>
+            <select name="caracteresEspeciaisFolha">
+              <option>Selecione a opção</option>
+              <option value="Cheiro">Cheiro</option>
+              <option value="Discolor">Discolor</option>
+              <option value="Discolor, Cheiro">Discolor, Cheiro</option>
+              <option value="Discolor, Estípulas">Discolor, Estípulas</option>
+              <option value="Discolor, Glândulas">Discolor, Glândulas</option>
+              <option value="Domáceas">Domáceas</option>
+              <option value="Estipula Interpeciolar">Estipula Interpeciolar</option>
+              <option value="Estípulas">Estípulas</option>
+              <option value="Exsudação">Exsudação</option>
+              <option value="Exsudação, Espinhos">Exsudação, Espinhos</option>
+              <option value="Glândulas no pecíolo">Glândulas no Pecíolo</option>
+              <option value="Glândulas no pecíolo, Estípulas">Glândulas no Pecíolo, Estípulas</option>
+              <option value="Glândulas no limbo">Glândulas no limbo</option>
+              <option value="Ráquis alado, Glândulas na ráquis">Ráquis alado, Glândulas na ráquis</option>
+            </select>
+            </div>
+        </div>
+        <div style="margin: 0 auto;max-width: 300px;">
+          <div class="opcoesLabel">
+            <label>Tipo de Caule:</label>
+            <select name="tipoCaule">
+              <option>Selecione a opção</option>
+              <option value="Tronco">Tronco</option>
+              <option value="Estipe">Estipe (palmeiras)</option>
+            </select>
+          </div>
+          <div class="opcoesLabel">
+          <label> Aparência Ritidoma:</label>
+          <select name="aparenciaRitidoma">
+            <option>Selecione a opção</option>
+            <option value="Áspero">Áspero</option>
+            <option value="Áspero, Cristado">Áspero, Cristado</option>
+            <option value="Áspero, Fissurado">Áspero, Fissurado</option>
+            <option value="Fissurado">Fissurado</option>
+            <option value="Fissurado, Áspero">Fissurado, Áspero</option>
+            <option value="Fissurado, Liso">Fissurado, Liso</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+          <label> Deiscência Ritidoma:</label>
+          <select name="deiscenciaRitidoma">
+            <option>Selecione a opção</option>
+            <option value="Indeiscente">Indeiscente</option>
+            <option value="Indeiscente,placas">Indeiscente, Placas</option>
+            <option value="Placas">Placas</option>
+            <option value="Placas, Indeiscente">Placas, Indeiscente</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+          <label> Textura Casca Interna:</label>
+          <select name="texturaCascaInterna">
+            <option>Selecione a opção</option>
+            <option value="Arenosa, Fibrosa">Arenosa, Fibrosa</option>
+            <option value="Fibrosa">Fibrosa</option>
+            <option value="Pastosa">Pastosa</option>
+            <option value="Pastosa, Fibrosa">Pastosa, Fibrosa</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+          <label> Cor da Casca Interna:</label>
+          <select name="CorCascaInterna">
+            <option>Selecione a opção</option>
+            <option value="Amarela">Amarela</option>
+            <option value="Amarela, Rosa">Amarela, Rosa</option>
+            <option value="Bege">Bege</option>
+            <option value="Bege, Rosa">Bege, Rosa</option>
+            <option value="Branca, Amarela">Branca, Amarela</option>
+            <option value="Branca, Bege">Branca, Bege</option>
+            <option value="Rosa">Rosa</option>
+            <option value="Rosa, Amarela">Rosa, Amarela</option>
+            <option value="Rosa, Bege">Rosa, Bege</option>
+          </select>
+          </div>
+          <div class="opcoesLabel">
+            <label> Caracteres Especias da Folha:</label>
+            <select name="caracteresEspeciaisCaule">
+              <option>Selecione a opção</option>
+              <option value="Cheiro">Cheiro</option>
+              <option value="Cheiro, Lenticelas">Cheiro, Lenticelas</option>
+              <option value="Entrenós visíveis">Entrenós visíveis</option>
+              <option value="Exsudação">Exsudação</option>
+              <option value="Exsudação, Espinhos">Exsudação, Espinhos</option>
+              <option value="Exsudação, Espinhos, Lenticelas">Exsudação, Espinhos, Lenticelas</option>
+              <option value="Exsudação, Lenticelas">Exsudação, Lenticelas</option>
+              <option value="Exsudação, Lenticelas, Espinhos">Exsudação, Lenticelas, Espinhos</option>
+              <option value="Lenticelas">Lenticelas</option>
+              <option value="Lenticelas, Cheiro">Lenticelas, Cheiro</option>
+              <option value="Lenticelas, Entrenós visíveis">Lenticelas, Entrenós visíveis</option>
+            </select>
+            </div>
+        </div>
+      </div>
+          <div class="btn-pesquisar">
+            <button class="btnHeaderRelative">Pesquisar</button>
+          </div>
+        </form>
+    </div>
+    <!-- Rodapé -->
+    <footer>
+      <div class="rodape">
+        <p class="p-rodape">Todos os Direitos Reservados.Copyright © 2016 • UTFPR - Universidade Tecnológica Federal do
+          Paraná</p>
+        <p class="p-rodape">Estrada para Boa Esperança • Km 04 • Comunidade São Cristóvão • Dois Vizinhos • Paraná •
+          CEP: 85660-000</p>
+        </div>
+    </footer>
+  </div>
+  <script src="public/javascripts/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
