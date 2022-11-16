@@ -2,7 +2,7 @@
 const Sequelize = require('sequelize');
 const { type } = require('express/lib/response');
 
-const sequelize = new Sequelize('arvoresDoCampus', 'root', 'mynewpassword', {
+const sequelize = new Sequelize('arvoresdocampus', 'root', 'mynewpassword', {
     host: "localhost",
     dialect: 'mysql'
 })
