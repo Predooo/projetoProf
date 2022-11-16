@@ -5,8 +5,6 @@ const { type } = require('express/lib/response');
 const sequelize = new Sequelize('arvoresdocampus', 'root', 'mynewpassword', {
     host: "localhost",
     dialect: 'mysql'
-}).then(()=>{
-    console.log("Conectado ao banco!")
 })
 
 const arvoresCampus1 = sequelize.define('arvorescampu', {
