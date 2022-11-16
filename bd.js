@@ -5,9 +5,11 @@ const { type } = require('express/lib/response');
 const sequelize = new Sequelize('arvoresdocampus', 'root', 'mynewpassword', {
     host: "localhost",
     dialect: 'mysql'
+}).then(()=>{
+    console.log("Conectado ao banco!")
 })
 
-const arvoresCampus1 = sequelize.define('arvoresCampu', {
+const arvoresCampus1 = sequelize.define('arvorescampu', {
     familia:{type: Sequelize.TEXT},
     especie:{type: Sequelize.TEXT},
     autor: {type: Sequelize.TEXT},
