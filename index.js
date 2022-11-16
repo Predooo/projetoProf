@@ -5,7 +5,7 @@ const bd = require("./bd")
 const app = express();
 const bodyParser = require('body-parser');
 const session = require("express-session");
-const PORT = 8000;
+const PORT = 3000;
 const HOST = '0.0.0.0';
 // CORS
 app.use(cors());

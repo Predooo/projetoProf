@@ -2,35 +2,13 @@ body, html{
     font-family: 'Roboto', sans-serif;
     background-color: var(--corfundo);   
 }
-.add{
-    display:inline-block;
-    min-width: 10%;
-    max-width: 10%;
-    margin: auto;
-    padding: 1%;
-}
 /* Corpo */
 .body{
-    margin: 15px auto;
+    margin: 15px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.36);
     border-radius: 10px;
     min-width: 300px;
     max-width: 79%;
-    display: inline-block;
-}
-@media (max-width:810px){
-    .body{
-        margin: 15px;
-        max-width: 100%;
-        display: block;
-    }
-    .add{
-        display: block;
-        min-width: 10%;
-        max-width: 10%;
-        margin: auto;
-        padding: 1%;
-    }
 }
 /* Cabecalho */
 .header{
